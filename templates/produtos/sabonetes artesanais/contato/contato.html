@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | Saboaria Alecrim</title>
+  <meta name="description" content="Fale com a Saboaria Alecrim para tirar dúvidas, encomendar kits personalizados ou combinar lotes para eventos.">
+  <link rel="stylesheet" href="../globals.css">
+  <link rel="stylesheet" href="../styleguide.css">
+  <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+  <div class="contato-desktop">
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a id="logo" class="site-logo" href="../home/index.html">Saboaria Alecrim</a>
+        <nav id="navbar" class="site-nav" aria-label="Navegação principal">
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a class="site-nav__link" href="../home/index.html">Início</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="../sobre/sobre.html">Sobre</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="../catalogo/catalogo.html">Catálogo</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="../contato/contato.html" aria-current="page">Contato</a></li>
+          </ul>
+        </nav>
+        <a class="button button--primary site-header__cta" href="../catalogo/catalogo.html">Ver catálogo</a>
+      </div>
+    </header>
+
+    <main class="page-main">
+
+      <section class="section contact">
+        <div class="contact__inner">
+
+          <div class="contact__info">
+            <div class="contact__heading">
+              <h1 class="contact__title">Fale com o ateliê</h1>
+              <p class="contact__lead">Tire dúvidas sobre os sabonetes, peça um kit personalizado ou combine um lote para o seu evento. Respondemos em até um dia útil.</p>
+            </div>
+            <dl class="contact-list">
+              <div class="contact-list__row">
+                <dt class="contact-list__label">WhatsApp e telefone</dt>
+                <dd class="contact-list__value"><a class="contact-list__link" href="https://wa.me/5500900000000">(00) 90000-0000</a></dd>
+              </div>
+              <div class="contact-list__row">
+                <dt class="contact-list__label">E-mail</dt>
+                <dd class="contact-list__value"><a class="contact-list__link" href="mailto:contato@saboariaalecrim.com.br">contato@saboariaalecrim.com.br</a></dd>
+              </div>
+              <div class="contact-list__row">
+                <dt class="contact-list__label">Endereço do ateliê</dt>
+                <dd class="contact-list__value">Rua das Ervas, 120, Jardim Botânico<br>Cidade, UF 00000-000</dd>
+              </div>
+              <div class="contact-list__row">
+                <dt class="contact-list__label">Horário de atendimento</dt>
+                <dd class="contact-list__value">Segunda a sexta, das 9h às 17h<br>Retirada somente com hora marcada</dd>
+              </div>
+            </dl>
+            <div class="image-placeholder image-placeholder--map" role="img" aria-label="Mapa de Localização">Mapa de Localização</div>
+          </div>
+
+          <div class="contact__form-wrapper">
+            <form id="contact-form" class="contact-form" action="#" method="post" enctype="multipart/form-data">
+              <div class="contact-form__heading">
+                <h2 class="contact-form__title">Envie uma mensagem</h2>
+                <p class="contact-form__note">Todos os campos são obrigatórios, exceto os marcados como opcionais.</p>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="field">
+                  <label class="field__label" for="contact-name">Nome</label>
+                  <input class="field__control" id="contact-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="contact-phone">WhatsApp ou telefone</label>
+                  <input class="field__control" id="contact-phone" name="phone" type="tel" autocomplete="tel" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="contact-email">E-mail</label>
+                <input class="field__control" id="contact-email" name="email" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="contact-subject">Assunto</label>
+                <select class="field__control" id="contact-subject" name="subject" required>
+                  <option value="" selected disabled>Selecione um assunto</option>
+                  <option value="duvida">Dúvida sobre um produto</option>
+                  <option value="kit">Kit personalizado</option>
+                  <option value="evento">Lote para evento ou lembrancinhas</option>
+                  <option value="revenda">Revenda</option>
+                  <option value="pedido">Meu pedido</option>
+                  <option value="outro">Outro assunto</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="contact-message">Mensagem</label>
+                <textarea class="field__control field__control--textarea" id="contact-message" name="message" rows="6" required></textarea>
+              </div>
+
+              <fieldset class="attachment">
+                <legend class="attachment__legend">Link ou anexo de referência (opcional)</legend>
+                <p class="attachment__hint">Útil para kits personalizados: envie uma imagem de inspiração, a paleta de cores ou o rótulo que você imaginou.</p>
+                <div class="field">
+                  <label class="field__label" for="contact-link">Link</label>
+                  <input class="field__control" id="contact-link" name="reference_link" type="url" placeholder="https://">
+                </div>
+                <div class="field">
+                  <label class="field__label" for="contact-file">Arquivo (imagem ou PDF, até 5 MB)</label>
+                  <input class="field__control field__control--file" id="contact-file" name="reference_file" type="file" accept="image/*,.pdf">
+                </div>
+              </fieldset>
+
+              <label class="consent" for="contact-consent">
+                <input class="consent__checkbox" id="contact-consent" name="consent" type="checkbox" required>
+                <span class="consent__text">Concordo em receber resposta por e-mail ou WhatsApp e com o uso dos meus dados apenas para este atendimento.</span>
+              </label>
+
+              <button id="submit-button" class="button button--primary button--large" type="submit">Enviar mensagem</button>
+
+              <p class="contact-form__status" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="footer" class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <p class="site-footer__logo">Saboaria Alecrim</p>
+            <p class="site-footer__about">Sabonetes artesanais de processo a frio, feitos em pequenos lotes e curados por seis semanas.</p>
+            <ul id="social-links" class="social-links" aria-label="Redes sociais">
+              <li class="social-links__item"><a class="social-links__link" href="#">Instagram</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="#">Facebook</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="#">WhatsApp</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="#">Pinterest</a></li>
+            </ul>
+          </div>
+          <nav class="site-footer__column" aria-label="Navegação do rodapé">
+            <h2 class="site-footer__heading">Navegue</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="../home/index.html">Início</a></li>
+              <li><a class="site-footer__link" href="../sobre/sobre.html">Sobre</a></li>
+              <li><a class="site-footer__link" href="../catalogo/catalogo.html">Catálogo</a></li>
+              <li><a class="site-footer__link" href="../contato/contato.html">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="site-footer__column">
+            <h2 class="site-footer__heading">Atendimento</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="mailto:contato@saboariaalecrim.com.br">contato@saboariaalecrim.com.br</a></li>
+              <li><a class="site-footer__link" href="tel:+5500000000000">(00) 90000-0000</a></li>
+              <li><span class="site-footer__text">Segunda a sexta, das 9h às 17h</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p class="site-footer__copy">2026 Saboaria Alecrim. Todos os direitos reservados.</p>
+          <ul class="site-footer__legal">
+            <li><a class="site-footer__link" href="#">Política de privacidade</a></li>
+            <li><a class="site-footer__link" href="#">Trocas e devoluções</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div class="contato-mobile">
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" data-mirror-id="logo" href="../home/index.html">Saboaria Alecrim</a>
+        <details id="mobile-menu" class="mobile-menu">
+          <summary class="mobile-menu__toggle">Menu</summary>
+          <nav class="mobile-menu__panel" data-mirror-id="navbar" aria-label="Navegação principal">
+            <ul class="mobile-menu__list">
+              <li><a class="mobile-menu__link" href="../home/index.html">Início</a></li>
+              <li><a class="mobile-menu__link" href="../sobre/sobre.html">Sobre</a></li>
+              <li><a class="mobile-menu__link" href="../catalogo/catalogo.html">Catálogo</a></li>
+              <li><a class="mobile-menu__link" href="../contato/contato.html" aria-current="page">Contato</a></li>
+            </ul>
+            <a class="button button--primary" href="../catalogo/catalogo.html">Ver catálogo</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main class="page-main">
+
+      <section class="section contact">
+        <div class="contact__inner">
+
+          <div class="contact__info">
+            <div class="contact__heading">
+              <h1 class="contact__title">Fale com o ateliê</h1>
+              <p class="contact__lead">Tire dúvidas sobre os sabonetes, peça um kit personalizado ou combine um lote para o seu evento. Respondemos em até um dia útil.</p>
+            </div>
+            <dl class="contact-list">
+              <div class="contact-list__row">
+                <dt class="contact-list__label">WhatsApp e telefone</dt>
+                <dd class="contact-list__value"><a class="contact-list__link" href="https://wa.me/5500900000000">(00) 90000-0000</a></dd>
+              </div>
+              <div class="contact-list__row">
+                <dt class="contact-list__label">E-mail</dt>
+                <dd class="contact-list__value"><a class="contact-list__link" href="mailto:contato@saboariaalecrim.com.br">contato@saboariaalecrim.com.br</a></dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="contact__form-wrapper">
+            <form class="contact-form" data-mirror-id="contact-form" action="#" method="post" enctype="multipart/form-data">
+              <div class="contact-form__heading">
+                <h2 class="contact-form__title">Envie uma mensagem</h2>
+                <p class="contact-form__note">Todos os campos são obrigatórios, exceto os marcados como opcionais.</p>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="field">
+                  <label class="field__label" for="m-contact-name">Nome</label>
+                  <input class="field__control" id="m-contact-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="m-contact-phone">WhatsApp ou telefone</label>
+                  <input class="field__control" id="m-contact-phone" name="phone" type="tel" autocomplete="tel" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="m-contact-email">E-mail</label>
+                <input class="field__control" id="m-contact-email" name="email" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="m-contact-subject">Assunto</label>
+                <select class="field__control" id="m-contact-subject" name="subject" required>
+                  <option value="" selected disabled>Selecione um assunto</option>
+                  <option value="duvida">Dúvida sobre um produto</option>
+                  <option value="kit">Kit personalizado</option>
+                  <option value="evento">Lote para evento ou lembrancinhas</option>
+                  <option value="revenda">Revenda</option>
+                  <option value="pedido">Meu pedido</option>
+                  <option value="outro">Outro assunto</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="m-contact-message">Mensagem</label>
+                <textarea class="field__control field__control--textarea" id="m-contact-message" name="message" rows="6" required></textarea>
+              </div>
+
+              <fieldset class="attachment">
+                <legend class="attachment__legend">Link ou anexo de referência (opcional)</legend>
+                <p class="attachment__hint">Útil para kits personalizados: envie uma imagem de inspiração, a paleta de cores ou o rótulo que você imaginou.</p>
+                <div class="field">
+                  <label class="field__label" for="m-contact-link">Link</label>
+                  <input class="field__control" id="m-contact-link" name="reference_link" type="url" placeholder="https://">
+                </div>
+                <div class="field">
+                  <label class="field__label" for="m-contact-file">Arquivo (imagem ou PDF, até 5 MB)</label>
+                  <input class="field__control field__control--file" id="m-contact-file" name="reference_file" type="file" accept="image/*,.pdf">
+                </div>
+              </fieldset>
+
+              <label class="consent" for="m-contact-consent">
+                <input class="consent__checkbox" id="m-contact-consent" name="consent" type="checkbox" required>
+                <span class="consent__text">Concordo em receber resposta por e-mail ou WhatsApp e com o uso dos meus dados apenas para este atendimento.</span>
+              </label>
+
+              <button class="button button--primary button--large" data-mirror-id="submit-button" type="submit">Enviar mensagem</button>
+
+              <p class="contact-form__status" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section section--alt location">
+        <div class="location__inner">
+          <h2 class="location__title">Onde estamos</h2>
+          <dl class="contact-list">
+            <div class="contact-list__row">
+              <dt class="contact-list__label">Endereço do ateliê</dt>
+              <dd class="contact-list__value">Rua das Ervas, 120, Jardim Botânico<br>Cidade, UF 00000-000</dd>
+            </div>
+            <div class="contact-list__row">
+              <dt class="contact-list__label">Horário de atendimento</dt>
+              <dd class="contact-list__value">Segunda a sexta, das 9h às 17h<br>Retirada somente com hora marcada</dd>
+            </div>
+          </dl>
+          <div class="image-placeholder image-placeholder--map" role="img" aria-label="Mapa de Localização">Mapa de Localização</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer" data-mirror-id="footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <p class="site-footer__logo">Saboaria Alecrim</p>
+            <p class="site-footer__about">Sabonetes artesanais de processo a frio, feitos em pequenos lotes e curados por seis semanas.</p>
+            <ul class="social-links" data-mirror-id="social-links" aria-label="Redes sociais">
+              <li class="social-links__item"><a class="social-links__link" href="#">Instagram</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="#">Facebook</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="#">WhatsApp</a></li>
+              <li class="social-links__item"><a class="social-links__link" href="#">Pinterest</a></li>
+            </ul>
+          </div>
+          <nav class="site-footer__column" aria-label="Navegação do rodapé">
+            <h2 class="site-footer__heading">Navegue</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="../home/index.html">Início</a></li>
+              <li><a class="site-footer__link" href="../sobre/sobre.html">Sobre</a></li>
+              <li><a class="site-footer__link" href="../catalogo/catalogo.html">Catálogo</a></li>
+              <li><a class="site-footer__link" href="../contato/contato.html">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="site-footer__column">
+            <h2 class="site-footer__heading">Atendimento</h2>
+            <ul class="site-footer__list">
+              <li><a class="site-footer__link" href="mailto:contato@saboariaalecrim.com.br">contato@saboariaalecrim.com.br</a></li>
+              <li><a class="site-footer__link" href="tel:+5500000000000">(00) 90000-0000</a></li>
+              <li><span class="site-footer__text">Segunda a sexta, das 9h às 17h</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p class="site-footer__copy">2026 Saboaria Alecrim. Todos os direitos reservados.</p>
+          <ul class="site-footer__legal">
+            <li><a class="site-footer__link" href="#">Política de privacidade</a></li>
+            <li><a class="site-footer__link" href="#">Trocas e devoluções</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
