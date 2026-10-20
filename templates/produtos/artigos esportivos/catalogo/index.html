@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artigos Esportivos - Catalogo</title>
+  <link rel="stylesheet" href="../globals.css">
+  <link rel="stylesheet" href="../styleguide.css">
+  <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+
+  <div class="catalogo-desktop">
+    <header class="header-desktop">
+      <div class="header-container">
+        <div id="logo" class="brand-logo">ATHLETICA</div>
+        <nav id="navbar" class="nav-desktop">
+          <ul class="nav-list">
+            <li><a href="../home/index.html">Inicio</a></li>
+            <li><a href="../catalogo/index.html">Lancamentos</a></li>
+            <li><a href="../catalogo/index.html">Masculino</a></li>
+            <li><a href="../catalogo/index.html">Feminino</a></li>
+            <li><a href="../sobre/index.html">A Marca</a></li>
+            <li><a href="../contato/index.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn-icon">Buscar</button>
+          <button class="btn-icon">Carrinho</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="catalogo-main">
+      <div class="catalogo-container">
+        <div class="catalogo-header">
+          <h1 class="catalogo-title">Todos os Produtos</h1>
+          <div class="catalogo-filters">
+            <select class="filter-select">
+              <option>Ordenar por: Lancamentos</option>
+              <option>Menor Preco</option>
+              <option>Maior Preco</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="catalogo-grid">
+          <div class="product-card">
+            <div id="product-image" class="image-placeholder card-image">Imagem do Produto 1</div>
+            <div class="card-content">
+              <h2 id="product-title" class="card-title">Camisa de Compressao Pro</h2>
+              <p id="product-description" class="card-description">Camisa termica para treinos de alta intensidade e recuperacao muscular.</p>
+              <div class="card-meta">
+                <span id="product-price" class="card-price">R$ 189,90</span>
+                <span id="stock-quantity" class="card-stock">Disponivel: 15</span>
+              </div>
+              <button id="buy-button" class="btn-primary card-btn" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div id="product-image" class="image-placeholder card-image">Imagem do Produto 2</div>
+            <div class="card-content">
+              <h2 id="product-title" class="card-title">Tenis Running Ultra</h2>
+              <p id="product-description" class="card-description">Amortecimento maximo e retorno de energia para corridas de longa distancia.</p>
+              <div class="card-meta">
+                <span id="product-price" class="card-price">R$ 799,00</span>
+                <span id="stock-quantity" class="card-stock">Disponivel: 8</span>
+              </div>
+              <button id="buy-button" class="btn-primary card-btn" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div id="product-image" class="image-placeholder card-image">Imagem do Produto 3</div>
+            <div class="card-content">
+              <h2 id="product-title" class="card-title">Shorts de Treino Flex</h2>
+              <p id="product-description" class="card-description">Liberdade de movimento com tecido ultraleve e respiravel.</p>
+              <div class="card-meta">
+                <span id="product-price" class="card-price">R$ 129,90</span>
+                <span id="stock-quantity" class="card-stock">Disponivel: 24</span>
+              </div>
+              <button id="buy-button" class="btn-primary card-btn" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div id="product-image" class="image-placeholder card-image">Imagem do Produto 4</div>
+            <div class="card-content">
+              <h2 id="product-title" class="card-title">Jaqueta Corta-Vento Aero</h2>
+              <p id="product-description" class="card-description">Protecao contra elementos com design refletivo para seguranca noturna.</p>
+              <div class="card-meta">
+                <span id="product-price" class="card-price">R$ 349,90</span>
+                <span id="stock-quantity" class="card-stock">Disponivel: 5</span>
+              </div>
+              <button id="buy-button" class="btn-primary card-btn" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div id="product-image" class="image-placeholder card-image">Imagem do Produto 5</div>
+            <div class="card-content">
+              <h2 id="product-title" class="card-title">Mochila Esportiva Elite</h2>
+              <p id="product-description" class="card-description">Compartimentos impermeaveis e espaco para calcados e equipamentos molhados.</p>
+              <div class="card-meta">
+                <span id="product-price" class="card-price">R$ 259,00</span>
+                <span id="stock-quantity" class="card-stock">Disponivel: 12</span>
+              </div>
+              <button id="buy-button" class="btn-primary card-btn" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div id="product-image" class="image-placeholder card-image">Imagem do Produto 6</div>
+            <div class="card-content">
+              <h2 id="product-title" class="card-title">Top Sustentacao Max</h2>
+              <p id="product-description" class="card-description">Firmeza absoluta e conforto para atividades de alto impacto.</p>
+              <div class="card-meta">
+                <span id="product-price" class="card-price">R$ 119,90</span>
+                <span id="stock-quantity" class="card-stock">Disponivel: 30</span>
+              </div>
+              <button id="buy-button" class="btn-primary card-btn" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer-desktop">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="brand-logo">ATHLETICA</div>
+          <p class="footer-tagline">Performance levada a serio.</p>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Institucional</h4>
+          <ul>
+            <li><a href="../sobre/index.html">Sobre Nos</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Sustentabilidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Ajuda</h4>
+          <ul>
+            <li><a href="../contato/index.html">Fale Conosco</a></li>
+            <li><a href="#">Politica de Trocas</a></li>
+            <li><a href="#">Rastrear Pedido</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4 class="footer-heading">Siga-nos</h4>
+          <ul id="social-links" class="social-list">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Athletica. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="catalogo-mobile">
+    <header class="header-mobile">
+      <div class="header-container-mobile">
+        <div class="brand-logo-mobile">ATHLETICA</div>
+        <button class="btn-icon menu-trigger">Menu</button>
+      </div>
+      <nav id="mobile-menu" class="nav-mobile">
+        <ul class="nav-list-mobile">
+          <li><a href="../home/index.html">Inicio</a></li>
+          <li><a href="../catalogo/index.html">Produtos</a></li>
+          <li><a href="../sobre/index.html">A Marca</a></li>
+          <li><a href="../contato/index.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="catalogo-main-mobile">
+      <div class="catalogo-container-mobile">
+        <div class="catalogo-header-mobile">
+          <h1 class="catalogo-title-mobile">Produtos</h1>
+          <select class="filter-select-mobile">
+            <option>Ordenar por: Lancamentos</option>
+            <option>Menor Preco</option>
+            <option>Maior Preco</option>
+          </select>
+        </div>
+
+        <div class="catalogo-grid-mobile">
+          <div class="product-card-mobile">
+            <div id="product-image" class="image-placeholder card-image-mobile">Imagem do Produto 1</div>
+            <div class="card-content-mobile">
+              <h2 id="product-title" class="card-title-mobile">Camisa de Compressao Pro</h2>
+              <p id="product-description" class="card-description-mobile">Camisa termica para treinos de alta intensidade.</p>
+              <div class="card-meta-mobile">
+                <span id="product-price" class="card-price-mobile">R$ 189,90</span>
+                <span id="stock-quantity" class="card-stock-mobile">Qtd: 15</span>
+              </div>
+              <button id="buy-button" class="btn-primary-mobile card-btn-mobile" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card-mobile">
+            <div id="product-image" class="image-placeholder card-image-mobile">Imagem do Produto 2</div>
+            <div class="card-content-mobile">
+              <h2 id="product-title" class="card-title-mobile">Tenis Running Ultra</h2>
+              <p id="product-description" class="card-description-mobile">Amortecimento maximo e retorno de energia.</p>
+              <div class="card-meta-mobile">
+                <span id="product-price" class="card-price-mobile">R$ 799,00</span>
+                <span id="stock-quantity" class="card-stock-mobile">Qtd: 8</span>
+              </div>
+              <button id="buy-button" class="btn-primary-mobile card-btn-mobile" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card-mobile">
+            <div id="product-image" class="image-placeholder card-image-mobile">Imagem do Produto 3</div>
+            <div class="card-content-mobile">
+              <h2 id="product-title" class="card-title-mobile">Shorts de Treino Flex</h2>
+              <p id="product-description" class="card-description-mobile">Liberdade de movimento com tecido ultraleve.</p>
+              <div class="card-meta-mobile">
+                <span id="product-price" class="card-price-mobile">R$ 129,90</span>
+                <span id="stock-quantity" class="card-stock-mobile">Qtd: 24</span>
+              </div>
+              <button id="buy-button" class="btn-primary-mobile card-btn-mobile" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card-mobile">
+            <div id="product-image" class="image-placeholder card-image-mobile">Imagem do Produto 4</div>
+            <div class="card-content-mobile">
+              <h2 id="product-title" class="card-title-mobile">Jaqueta Corta-Vento Aero</h2>
+              <p id="product-description" class="card-description-mobile">Protecao contra elementos com design refletivo.</p>
+              <div class="card-meta-mobile">
+                <span id="product-price" class="card-price-mobile">R$ 349,90</span>
+                <span id="stock-quantity" class="card-stock-mobile">Qtd: 5</span>
+              </div>
+              <button id="buy-button" class="btn-primary-mobile card-btn-mobile" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card-mobile">
+            <div id="product-image" class="image-placeholder card-image-mobile">Imagem do Produto 5</div>
+            <div class="card-content-mobile">
+              <h2 id="product-title" class="card-title-mobile">Mochila Esportiva Elite</h2>
+              <p id="product-description" class="card-description-mobile">Compartimentos impermeaveis e amplo espaco.</p>
+              <div class="card-meta-mobile">
+                <span id="product-price" class="card-price-mobile">R$ 259,00</span>
+                <span id="stock-quantity" class="card-stock-mobile">Qtd: 12</span>
+              </div>
+              <button id="buy-button" class="btn-primary-mobile card-btn-mobile" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-card-mobile">
+            <div id="product-image" class="image-placeholder card-image-mobile">Imagem do Produto 6</div>
+            <div class="card-content-mobile">
+              <h2 id="product-title" class="card-title-mobile">Top Sustentacao Max</h2>
+              <p id="product-description" class="card-description-mobile">Firmeza absoluta para atividades de alto impacto.</p>
+              <div class="card-meta-mobile">
+                <span id="product-price" class="card-price-mobile">R$ 119,90</span>
+                <span id="stock-quantity" class="card-stock-mobile">Qtd: 30</span>
+              </div>
+              <button id="buy-button" class="btn-primary-mobile card-btn-mobile" onclick="window.location.href='../preco/index.html'">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-mobile">
+      <div class="footer-brand-mobile">
+        <div class="brand-logo">ATHLETICA</div>
+      </div>
+      <ul class="social-list-mobile">
+        <li><a href="#">IG</a></li>
+        <li><a href="#">TW</a></li>
+        <li><a href="#">YT</a></li>
+      </ul>
+      <div class="footer-bottom-mobile">
+        <p>2026 Athletica.</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
